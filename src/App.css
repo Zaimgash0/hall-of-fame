@@ -1,0 +1,167 @@
+:root {
+  --sfondo-body: #2b2d42;
+  --testo-chiaro: #edf2f4;
+  --bordo-spesso: 4px solid #000;
+}
+
+body {
+  margin: 0;
+  background-color: var(--sfondo-body);
+  font-family: 'Arial', sans-serif;
+  color: var(--testo-chiaro);
+}
+
+.contenitore-principale {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header-spettacolo {
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: #ef233c;
+  padding: 1rem;
+  border: var(--bordo-spesso);
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #000;
+}
+
+.header-spettacolo h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.sottotitolo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.griglia-vincitori {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-vincitore {
+  background-color: #fff;
+  color: #000;
+  border: var(--bordo-spesso);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0px var(--colore-card, #8d99ae);
+  transition: transform 0.2s ease;
+}
+
+.card-vincitore:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: var(--colore-card, #8d99ae);
+  padding: 1rem;
+  text-align: center;
+  border-bottom: var(--bordo-spesso);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.card-corpo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.segnaposto-immagine {
+  width: 90px;
+  height: 90px;
+  background-color: #ccc;
+  border: var(--bordo-spesso);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.nome-giocatore {
+  font-size: 1.4rem;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.statistiche {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8edeb;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.stat-valore {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #d90429;
+}
+
+.card-footer {
+  background-color: #2b2d42;
+  color: #fff;
+  padding: 0.8rem;
+  border-top: var(--bordo-spesso);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sentenza {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.sentenza::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sentenza::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.sentenza::-webkit-scrollbar-thumb {
+  background-color: #ef233c;
+  border: 1px solid #000;
+  border-radius: 4px;
+}

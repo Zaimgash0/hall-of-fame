@@ -1,0 +1,13 @@
+{
+  "stagioni": [
+    {
+      "id": "s1",
+      "titolo_stagione": "Total Drama:Metaverso",
+      "giocatore": "Mikozzo",
+      "immunita_vinte": 3,
+      "voti_ricevuti": "4",
+      "sentenza_host": "Silenziosa, letale e sempre un passo avanti alle alleanze nemiche .",
+      "colore_tema": "#FF6B6B"
+    }
+  ]
+}
