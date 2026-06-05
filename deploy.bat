@@ -1,0 +1,9 @@
+@echo off
+echo Preparazione dei file...
+git add .
+echo Creazione del punto di salvataggio...
+git commit -m "Aggiornamento Albo d'Oro"
+echo Invio dei dati su GitHub...
+git push
+echo Sincronizzazione completata! Netlify sta aggiornando il sito.
+pause
